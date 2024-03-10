@@ -17,6 +17,7 @@ python manage.py runserver
 Для запуска периодической задачи открыть два терминала и ввести следующие команды.
 
 celery -A config worker -l INFO
+
 celery -A config beat -l INFO
 
 
