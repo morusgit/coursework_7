@@ -1,7 +1,9 @@
 from rest_framework import serializers
 from habits.models import Habit
-from habits.validators import *
-
+from habits.validators import validate_habit_fields
+from habits.validators import validate_time_required
+from habits.validators import validate_related_habit
+from habits.validators import validate_pleasurable_habit
 
 class HabitsSerializer(serializers.ModelSerializer):
     class Meta:
